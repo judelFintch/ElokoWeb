@@ -1,0 +1,16 @@
+<!-- incident_reporting/templates/incident_reporting/incident_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Incidents</title>
+</head>
+<body>
+    <h1>List of Incidents</h1>
+    <ul>
+        {% for incident in incidents %}
+            <li>{{ incident.title }} - {{ incident.date_reported }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
